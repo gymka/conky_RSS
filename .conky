@@ -1,4 +1,4 @@
-# Create own window instead of using desktop (required in nautilus)
+r# Create own window instead of using desktop (required in nautilus)
 own_window yes
 own_window_type normal
 own_window_title Conky-stats
@@ -50,9 +50,10 @@ alignment bottom_left
 #alignment bottom_right
 
 # Gap between borders of screen and text
-gap_x 5  
+gap_x 5 
 gap_y 0
 # stuff after 'TEXT' will be formatted on screen 
 TEXT
 ${font :size=11}${color grey}Delfi.lt: ${hr 2}$color${font}
-${execpi 600 /home/gymka/Dev/conky_rss/rss.sh} 
+${execpi 600 ./rss.py "http://www.delfi.lt/rss/feeds/lithuania.xml" "12"} 
+${execpi 600 ./rss.py "http://www.delfi.lt/rss/feeds/world.xml" "12"} 
