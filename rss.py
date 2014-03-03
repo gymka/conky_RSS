@@ -14,4 +14,4 @@ def gaut_rss(kuris, kiek):
 try:
 	gaut_rss(sys.argv[1],int(sys.argv[2]))
 except:
-	print("klaida")
+	print("Naudojimas: ./rss.py rss_srautas naujienų_skaičius\nPvz. ./rss.py \"http://www.delfi.lt/rss/feeds/lithuania.xml\" 10")
