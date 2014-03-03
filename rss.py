@@ -10,7 +10,7 @@ def gaut_rss(kuris, kiek):
 	while i<kiek:
 		print(rss.entries[i]['title'])
 		i+=1
-	print("_______________________________________________")
+	print("---------------------------------------------------")
 try:
 	gaut_rss(sys.argv[1],int(sys.argv[2]))
 except:
